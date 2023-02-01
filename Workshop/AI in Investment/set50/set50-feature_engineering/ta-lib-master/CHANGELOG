@@ -1,0 +1,190 @@
+0.4.22
+======
+
+- [NEW]: Upgrade to Cython 0.29.24
+
+0.4.21
+======
+
+- [FIX]: Fixed {MIN/MAX/MINMAX}INDEX functions to return correct indices.
+
+0.4.20
+======
+
+- [NEW]: Upgrade to Cython 0.29.23
+
+- [FIX]: Fix Homebrew directory on Apple M1 devices
+
+0.4.19
+======
+
+- [NEW]: Upgrade to Cython 0.29.20
+
+- [NEW]: from talib import * (imports all func and stream)
+
+- [FIX]: missing method signatures in PyCharm
+
+0.4.18
+======
+
+- [NEW]: Upgrade to Cython 0.29.17
+
+- [NEW]: Support TA_SetCompatibility
+
+- [NEW]: Reduce size of generated C file and memory requirements to compile it.
+
+- [FIX]: Fixed caching input price series in Abstract API
+
+- [NEW]: Support pandas.Series in Streaming API
+
+0.4.17
+======
+
+- [NEW]: Support pandas.Series in Function API
+
+0.4.16
+======
+
+- [FIX]: Fix incorrect C header include on Windows.
+
+0.4.15
+======
+
+- [FIX]: Import TA_FUNC_FLAGS, TA_INPUT_FLAGS, TA_OUTPUT_FLAGS into
+         talib.abstract to support backwards compatibility for backtrader
+
+0.4.14
+======
+
+- [NEW]: Upgrade to Cython 0.27.3
+
+- [NEW]: Add support for set/restore candle settings
+
+- [DOC]: Note Function API only supports numpy.ndarray (not pandas.Series)
+
+- [NEW]: Continuous integration using Travis on Python 2.7, 3.4, 3.5, 3.6
+
+- [NEW]: Merge common, func, abstract, stream as pxi to _ta_lib.pyx
+
+- [DOC]: Update documentation to warn about unstable functions
+
+0.4.10
+======
+
+- [NEW]: Upgrade to Cython 0.23.4.
+
+- [NEW]: Adding an experimental Streaming API (talib.stream).
+
+- [NEW]: Support for "sunos"
+
+- [FIX]: Fix issue initializing library for use with candlestick functions.
+
+- [NEW]: Support for TA_SetUnstablePeriod and TA_GetUnstablePeriod
+
+0.4.9
+=====
+
+- [NEW]: Support for python 2.6 and earlier for ordereddict.
+
+- [FIX]: Add lib64 paths to setup.py.
+
+- [NEW]: Upgrade to Cython 0.22.
+
+- [FIX]: Allow running setup.py without numpy or cython
+
+- [NEW]: Allow TA_LIBRARY_PATH and TA_INCLUDE_PATH environment variables.
+
+0.4.8
+=====
+
+- [NEW]: Support pandas.Series and pandas.Dataframe inputs.
+
+- [FIX]: Simple check to warn if ta-lib library is not installed
+
+- [FIX]: Fix missing key error when inputs are not default names.
+
+- [NEW]: Upgrade to Cython 0.20.
+
+- [FIX]: Check all input array lengths are same.
+
+- [FIX]: Check all input arrays for NaN elements.
+
+0.4.7
+=====
+
+- [NEW]: Upgrade to Cython 0.19.1.
+
+- [FIX]: Fix "periods" input arrays in abstract interface.
+
+- [FIX]: Only require necessary input arrays in abstract interface.
+
+0.4.6
+=====
+
+- [NEW]: Support for function_flags and output_flags properties in Functions
+
+0.4.5
+=====
+
+- [NEW]: Better test coverage of abstract interface.
+
+- [NEW]: Support for Python 3.
+
+0.4.4
+=====
+
+- [FIX]: Make installation on Windows easier.
+
+0.4.3
+=====
+
+- [NEW]: Upgrade to Cython 0.18.
+
+- [FIX]: Improve docstrings for indicators in talib.func.
+
+- [FIX]: Initialize and shutdown underlying TA-Lib only once each process.
+  This should give slight speedups when using many indicators (<5%).
+
+- [DEPRECATED]: The old moving average types that were in talib.func are now
+  deprecated. See the next bullet item for the replacement, or you can
+  continue using them with "from talib import deprecated" for the time being.
+
+- [NEW]: The new moving average types are in talib.MA_Type. It's a class with SMA,
+  EMA, DEMA, etc attribute variables you should now use. Human-readable lookups
+  are also possible by using MA_Type as a dict e.g.:
+
+    MA_Type[MA_Type.SMA] # returns "Simple Moving Average"
+
+- [NEW]: In addition to the existing func interface, we now provide an
+  enhanced abstract interface too. Functions in "import talib" use the
+  original interface, or you can use "from talib import abstract" for
+  the full abstract interface. See the README, tools/example.py and
+  tests/abstract_test.py for more information. The full (commented)
+  source code is mostly located in talib/abstract.pyx. The basic usage is very
+  similar:
+
+    input_arrays = { 'open': np.random.random(100),
+                     'high': np.random.random(100),
+                     'low': np.random.random(100),
+                     'close': np.random.random(100),
+                     'volume': np.random.random(100) }
+    ema_20 = abstract.Function('ema', input_arrays, 20).outputs # function names not case-sensitive
+    slowd, slowk = abstract.Function('STOCH')(input_arrays, 15, 3, 0, 3, 0)
+    upper, middle, lower = abstract.Function('bbands')(input_arrays, timeperiod=20)
+
+0.4.2
+=====
+
+- Move the functions into ``talib.func``, to prepare for ``talib.abstract``
+  in a future release.
+
+0.4.1
+=====
+
+- Support for MacPorts.
+- Fix for FreeBSD.
+
+0.4.0
+=====
+
+First version.
