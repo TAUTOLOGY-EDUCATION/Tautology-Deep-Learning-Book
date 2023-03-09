@@ -1,0 +1,3 @@
+ปัจจัยส่งผลต่อความการเพิ่มขึ้นของความซับซ้อนใน deep learning ได้แก่
+  >  การนำฟังก์ชันไปผ่าน activation function ซ้ำอีกรอบ (การเพิ่มจำนวน hidden layer)
+  >  การนำ function ไปคูณกับ weight ที่แตกต่างกันตามจำนวนของ hidden node ใน hidden layer ชั้นนั้นๆ (การเพิ่มจำนวน hidden node ในชั้น hidden layer)

@@ -1,0 +1,1 @@
+ในการปรับ learning rate ให้เหมาะสม สามารถทำได้โดยการตรวจสอบการลดลงของ error หรือ cost function ในแต่ละรอบของการ train model รวมไปถึงการตรวจสอบประสิทธิภาพบน test set ของ learning rate ในแต่ละค่า

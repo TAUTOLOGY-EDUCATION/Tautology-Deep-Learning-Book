@@ -1,0 +1,5 @@
+เราสามารถใช้ logistic regression แบบ multi-class classification ในการจัดการกับปัญหา binary classification ได้ 
+
+อีกทั้งการใช้ logistic regression แบบ multi-class classification ในการจัดการกับปัญหา binary classification นั้นยังให้ผลลัพธ์ที่ไม่แตกต่างกัน
+
+แต่ในด้านการใช้ทรัพยากรในการคำนวนนั้น logistic regression แบบ binary classification จะใช้ทรัพยากรในการคำนวนน้อยกว่า

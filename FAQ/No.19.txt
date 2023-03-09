@@ -1,0 +1,5 @@
+assumption แต่ละข้อของ logistic regression ประกอบด้วย
+  >  linear relationship to log odds : feature และ log transform ของ target จะต้องมีความสัมพันธ์กันแบบเชิงเส้น
+  >  the observations are independent : ข้อมูลแต่ละ sample จะต้องมีความเป็นอิสระซึ่งกันและกัน
+  >  no missing feature : feature ที่นำมาใช้ในการ train model จะต้องมีความครบถ้วน
+  >  no multicollinearity : feature ที่นำมาใช้จะต้องไม่มีความสัมพันธ์เชิงเส้นซึ่งกันและกัน

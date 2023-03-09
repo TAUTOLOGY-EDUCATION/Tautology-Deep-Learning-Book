@@ -1,0 +1,1 @@
+softmax function เป็น function ที่สามารถสร้าง probability distribution ได้ ทำให้สามารถตีความความน่าจะเป็นของการเป็น class แต่ละ class, เป็น function ที่มีความ smooth และสามารถหาอนุพันธ์ได้

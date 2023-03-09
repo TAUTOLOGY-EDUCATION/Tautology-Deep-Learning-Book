@@ -1,0 +1,5 @@
+เหตุผลของการที่ควรจะเรียน linear regression และ logistic regression ก่อนเรียน deep learning เนื่องจาก  linear regression และ logistic regression สามารถเข้าใจได้ง่าย 
+
+อีกทั้งในหน่วยย่อยของ deep learning นั้นมีการทำงานเหมือนกับ linear regression และในปัญหา classification การแปลงผลลัพท์การพยากรณ์ให้อยู่ในรูปความน่าจะเป็น ก็ใช้ความรู้แบบเดียวกันกับการแปลงผลลัพท์การพยากรณ์ให้อยู่ในรูปความน่าจะเป็นของ logistic regression
+
+ความรู้ในการสร้าง model เหล่านี้จึงเป็นพื้นฐานที่สำคัญของ deep learning และช่วยให้เข้าใจการทำงานของ deep learning ได้ดีมากยึ่งขึ้น

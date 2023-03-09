@@ -1,0 +1,7 @@
+assumption แต่ละข้อของ linear regression ประกอบด้วย
+  >  linear relationship : feature และ target ต้องมีความสัมพันธ์กันแบบเชิงเส้น
+  >  homoscedasticity : ความแปรปรวนของผลต่างระหว่างค่าจริงกับค่าที่ได้จากการพยากรณ์จะต้องเท่ากันตลอดทั้งช่วงการพยากรณ์
+  >  the observations are independent : ข้อมูลแต่ละ sample จะต้องมีความเป็นอิสระซึ่งกันและกัน
+  >  normality of residual : ผลต่างระหว่างค่าจริงกับค่าที่ได้จากการพยากรณ์จะต้องมีการกระจายตัวแบบ normal
+  >  no missing feature : feature ที่นำมาใช้ในการ train model จะต้องมีความครบถ้วน
+  >  no multicollinearity : feature ที่นำมาใช้จะต้องไม่มีความสัมพันธ์เชิงเส้นซึ่งกันและกัน

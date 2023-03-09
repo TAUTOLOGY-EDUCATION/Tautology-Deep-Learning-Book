@@ -1,0 +1,1 @@
+sigmoid function เป็น function ที่สามารถแปลงค่าใด ๆ ให้อยู่ในช่วง 0 ถึง 1 ทำให้สามารถตีความให้ค่านั้นเป็นความน่าจะเป็นของ class ได้ อีกทั้งยังเป็น function ที่มีความ smooth และสามารถหาอนุพันธ์ได้ ทำให้สามารถใช้ gradient descent ในการหาจุดต่ำสุดได้ และยังสามารถต่อยอดนำไปสู่ softmax function ใน logistic regression แบบ multi-class classification ได้ด้วย

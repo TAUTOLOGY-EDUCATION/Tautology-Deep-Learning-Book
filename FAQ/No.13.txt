@@ -1,0 +1,4 @@
+สาเหตุที่เราเลือกใช้ sum of squared error เป็น cost function สำหรับ linear regression เนื่องจาก
+  >  error ของแต่ละ sample จะไม่หักล้างกัน
+  >  cost function ที่นิยามแบบ sum of squared error มีความต่อเนื่องทุกจุด และสามารถหาค่าอนุพันธ์ได้ (differentiate)
+  >  cost function ที่นิยามแบบ sum of squared error เป็น convex function และมีจุดต่ำสุดเพียงจุดเดียว

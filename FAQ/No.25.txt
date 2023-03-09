@@ -1,0 +1,4 @@
+การเพิ่ม node ใน hidden layer แต่ละชั้นส่งผลต่อ model แตกต่างกันโดย
+  >  การเพิ่ม node ใน hidden layer ในชั้นที่ 1 จะเพิ่ม function ตั้งต้นที่มีความหลากหลาย
+  >  การเพิ่ม node ใน hidden layer ในชั้นที่ 2 จะเพิ่มความหลากหลายของการนำ function ที่ได้จาก hidden layer ในชั้นที่ 1 ไปผ่าน activation function ซ้ำ
+  >  การเพิ่ม node ใน hidden layer ในชั้นที่ 3+ จะเพิ่มความหลากหลายของการนำ function ที่ได้จาก hidden layer ในชั้นก่อนหน้าไปผ่าน activation function ซ้ำ

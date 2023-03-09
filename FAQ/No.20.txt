@@ -1,0 +1,5 @@
+สาเหตุของการใช้ cross entropy function ในการนิยาม error ของ logistic regression
+ประกอบด้วย
+  >  เป็น function ที่สามารถเปรียบเทียบ probability distribution ของค่าจริงกับค่าพยากรณ์ได้
+  >  cost function ที่นิยามแบบ cross entropy สามารถหาอนุพันธ์ได้ และมีความต่อเนื่องทุกจุด
+  >  cost function ที่นิยามแบบ cross entropy เป็น convex function และมีจุดต่ำสุดเพียงค่าเดียว

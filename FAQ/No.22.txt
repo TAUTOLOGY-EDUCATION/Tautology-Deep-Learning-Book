@@ -1,0 +1,1 @@
+การเพิ่ม hidden node ส่งผลให้ deep learning model มีความซับซ้อนเพิ่มมากขึ้น แต่การเพิ่ม hidden node ก็ต้องแลกมาด้วย computational cost ในการคำนวนที่สูงขึ้นด้วยเช่นกัน
